@@ -46,3 +46,50 @@ a {
   padding: 1rem;
   border-radius: 25px;
 }
+/* ------------- produktliste ------------- */
+.productlist main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
+  gap: 2rem;
+}
+
+.productlist article.soldOut img {
+  opacity: 0.5;
+}
+
+.productlist main h2 {
+  grid-column: 1/-1;
+}
+.productlist article.onSale .discounted {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productlist article.soldOut::before {
+  content: "Sold Out";
+  position: absolute;
+  background: var(--color);
+  color: var(--background-color);
+  padding: 1rem;
+}
+
+.productlist article {
+  display: flex;
+  flex-direction: column;
+}
+
+.productlist article h3 {
+  font-size: 1rem;
+  flex-grow: 3;
+}
+
+.productlist article * {
+  margin: 0;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.productlist article .discounted,
+.productlist article .price span {
+  display: none;
+}
