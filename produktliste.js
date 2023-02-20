@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const kat = urlParams.get("kat");
-const url = "https://moebelsite-f868.restdb.io/rest/moebler";
+const url = `https://moebelsite-f868.restdb.io/rest/moebler?kategori=${kat}`;
 
 const options = {
   headers: {
@@ -8,7 +8,7 @@ const options = {
   },
 };
 
-//document.querySelector("h2").textContent = kat;
+document.querySelector("h2").textContent = kat;
 
 async function getData() {
   const response = await fetch(url, options);
@@ -25,7 +25,7 @@ function showProduct(product) {
 
   copy.querySelector("h3").textContent = product.navn;
   copy.querySelector(".farve").textContent = product.farve;
-  copy.querySelector("#procent").textContent = product.tilbud;
+  copy.querySelector("#procent").textContent = product.tilbud + " %";
   copy.querySelector(".price").textContent = product.pris + " DKK";
   copy.querySelector("img").src = "webp/" + product.billede;
   copy.querySelector("a").href = "produkt.html?id=" + product.id;
