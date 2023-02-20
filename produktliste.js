@@ -24,17 +24,18 @@ function showProduct(product) {
   const copy = template.cloneNode(true);
 
   copy.querySelector("h3").textContent = product.navn;
+  copy.querySelector(".farve").textContent = product.farve;
   copy.querySelector("#procent").textContent = product.tilbud;
-  copy.querySelector(".price").textContent = product.pris;
-  copy.querySelector("img").src = product.billede;
+  copy.querySelector(".price").textContent = product.pris + " DKK";
+  copy.querySelector("img").src = "webp/" + product.billede;
   copy.querySelector("a").href = "produkt.html?id=" + product.id;
-  copy.querySelector(".discounted p span").textContent = Math.round(product.pris - (product.pris * product.tilbud) / 100);
+  copy.querySelector(".tilbud p span").textContent = Math.round(product.pris - (product.pris * product.tilbud) / 100);
 
   if (product.udsolgt) {
     copy.querySelector("article").classList.add("udsolgt");
   }
   if (product.tilbud) {
-    copy.querySelector("article").classList.add("tilbud");
+    copy.querySelector(".tilbud").classList.remove("gem");
   }
 
   document.querySelector("main").appendChild(copy);
