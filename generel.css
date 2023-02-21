@@ -32,6 +32,14 @@ nav a:hover {
   color: grey;
 }
 
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
 a {
   text-decoration: none;
   color: black;
