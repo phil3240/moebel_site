@@ -69,14 +69,9 @@ footer h3 {
 
 /* --------------- Forside -------------- */
 
-.forsideKnap {
-  text-justify: center;
-}
-
 /* ------------- produktliste ------------- */
 .productlist main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
   gap: 2rem;
 }
 
