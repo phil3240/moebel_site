@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const kat = urlParams.get("kat");
-const url = `https://moebelsite-f868.restdb.io/rest/moebler?kategori=${kat}`;
+const url = `https://moebelsite-f868.restdb.io/rest/moebler?q={"kategori":"${kat}"}`;
 
 const options = {
   headers: {
@@ -19,7 +19,11 @@ async function getData() {
 
 getData();
 
-function showProduct(product) {
+function showProduct(product, i) {
+  if (i == 0) {
+    console.log("product 0:", product);
+  }
+
   const template = document.querySelector("#smallProductTemplate").content;
   const copy = template.cloneNode(true);
 
@@ -28,7 +32,7 @@ function showProduct(product) {
   copy.querySelector("#procent").textContent = product.tilbud + " %";
   copy.querySelector(".price").textContent = product.pris + " DKK";
   copy.querySelector("img").src = "webp/" + product.billede;
-  copy.querySelector("a").href = "produkt.html?id=" + product.id;
+  copy.querySelector("a").href = "produkt.html?id=" + product._id;
   copy.querySelector(".tilbud p span").textContent = Math.round(product.pris - (product.pris * product.tilbud) / 100);
 
   if (product.udsolgt) {

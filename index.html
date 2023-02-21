@@ -10,50 +10,57 @@
 
   <body>
     <header>
-      <div><a href="index.html">LOGO</a></div>
-
-      <div>
-        <nav>
-          <ul>
-            <li><a href="produktliste.html">Sofaer</a></li>
-            <li><a href="produktliste.html?kat=Bord">Sofaborde</a></li>
-            <li><a href="produktliste.html">Lamper</a></li>
-            <li><a href="produktliste.html?kat=Stol">Lænestole</a></li>
-            <li><a href="produktliste.html">Kommoder</a></li>
-            <li><a href="produktliste.html">Tekstiler</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <ul>
+          <li><a href="produktliste.html">Sofaer</a></li>
+          <li><a href="produktliste.html?kat=Bord">Borde</a></li>
+          <a href="index.html"><img class="logo" src="logo.svg" alt="logo" /></a>
+          <li><a href="produktliste.html?kat=Stol">Lænestole</a></li>
+          <li><a href="produktliste.html">Kommoder</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <h1>Det sejeste møbelsite</h1>
-      <h2>Mega seje møbler</h2>
+      <h1>Furniture 4 you</h1>
+      <h2>Kvalitet & design er vores mærkesag</h2>
       <div class="forsideBilleder">
         <div><img src="placeholder.jpeg" alt="" /></div>
         <div><img src="placeholder.jpeg" alt="" /></div>
         <div><img src="placeholder.jpeg" alt="" /></div>
       </div>
+      <a class="forsideKnap" href="produktliste.html">Shop nu</a>
     </main>
-    <form>
-      <label for="full-name">Fulde navn</label>
-      <input id="full-name" name="fname" type="text" placeholder="Mathilde Krener" />
-      <label for="email">E-mail</label>
-      <input id="email" name="email" type="email" placeholder="mathildekrener@gmail.com" />
-      <button>Send ind</button>
-    </form>
+
     <footer>
-      <ul>
-        <a href="#">Facebook</a>
-      </ul>
-      <ul>
-        <a href="#">Instagram</a>
-      </ul>
-      <ul>
-        <a href="#">Mail</a>
-      </ul>
-      <ul>
-        <a href="#">Telefon</a>
-      </ul>
+      <section>
+        <h3>Tilmeld dig vores nyhedsbrev</h3>
+        <form>
+          <ul>
+            <label for="full-name">Fulde navn</label>
+            <input id="full-name" name="fname" type="text" placeholder="Mathilde Krener" />
+          </ul>
+          <ul>
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="mathildekrener@gmail.com" />
+          </ul>
+          <button>Send ind</button>
+        </form>
+      </section>
+      <section>
+        <h3>Kontakt os</h3>
+        <ul>
+          <a href="#">Facebook</a>
+        </ul>
+        <ul>
+          <a href="#">Instagram</a>
+        </ul>
+        <ul>
+          <a href="#">Mail</a>
+        </ul>
+        <ul>
+          <a href="#">Telefon</a>
+        </ul>
+      </section>
     </footer>
   </body>
 </html>

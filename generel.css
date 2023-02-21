@@ -20,6 +20,8 @@ img {
   display: block;
 }
 
+/*----------------- header----------------- */
+
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -30,6 +32,10 @@ nav ul {
 
 nav a:hover {
   color: grey;
+}
+
+.logo {
+  width: 60%;
 }
 
 h1 {
@@ -54,6 +60,19 @@ a {
   padding: 1rem;
   border-radius: 25px;
 }
+
+/* ---------------- Footer -------------- */
+
+footer h3 {
+  margin-block: 1rem;
+}
+
+/* --------------- Forside -------------- */
+
+.forsideKnap {
+  text-justify: center;
+}
+
 /* ------------- produktliste ------------- */
 .productlist main {
   display: grid;
