@@ -127,3 +127,7 @@ footer {
 .gem {
   display: none;
 }
+
+html {
+  font-family: "Oswald", sans-serif;
+}
