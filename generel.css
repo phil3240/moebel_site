@@ -51,14 +51,16 @@ a {
   color: black;
 }
 
-.forsideBilleder {
-  display: flex;
-  justify-content: space-between;
+nav {
+  --less-than: 700;
+  --burger-lines: #000000;
+  --burger-border: #000000;
 }
 
-.forsideBilleder img {
-  padding: 1rem;
-  border-radius: 25px;
+@media (max-width: 700px) {
+  .logo {
+    display: none;
+  }
 }
 
 /* ---------------- Footer -------------- */
@@ -66,8 +68,6 @@ a {
 footer h3 {
   margin-block: 1rem;
 }
-
-/* --------------- Forside -------------- */
 
 /* ------------- produktliste ------------- */
 .productlist main {
