@@ -11,12 +11,12 @@ function hentData(url) {
 
 function visProdukt(produkt) {
   console.log(produkt);
-  document.querySelector("h2").textContent = produkt.productdisplayname;
-  document.querySelector("#model").textContent = produkt.productdisplayname;
-  document.querySelector("#farve").textContent = produkt.basecolour;
+  document.querySelector(".produkt_navn").textContent = produkt.navn;
+  document.querySelector(".colour").textContent = produkt.farve;
+  document.querySelector(".produkt_maal").textContent = produkt.produktmaal;
   document.querySelector("#pris").textContent = produkt.price;
   document.querySelector("#type").textContent = produkt.articletype;
-  document.querySelector("#billede").src = imagePath;
+  document.querySelector("img").src = imagePath;
 }
 
 hentData(produktURL);
