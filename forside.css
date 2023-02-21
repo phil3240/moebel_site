@@ -1,9 +1,3 @@
-.forsideKnap {
-  display: grid;
-  justify-content: center;
-  border: 1px solid black;
-}
-
 form {
   display: grid;
   gap: 1rem;
