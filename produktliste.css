@@ -6,6 +6,11 @@
   margin-inline: auto;
 }
 
-html {
-  font-family: "Oswald", sans-serif;
+#læsmere {
+  font-size: 1.3rem;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: grey;
 }
