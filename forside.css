@@ -3,3 +3,26 @@ form {
   gap: 1rem;
   width: 2rem;
 }
+
+.forsideBilleder img {
+  padding: 1rem;
+}
+
+.forsideBilleder img:hover {
+  opacity: 80%;
+}
+
+.index h1 {
+  margin: 2rem;
+}
+
+.index h2 {
+  margin: 1.5rem;
+}
+
+@media (min-width: 700px) {
+  .forsideBilleder {
+    display: flex;
+    justify-content: space-between;
+  }
+}
