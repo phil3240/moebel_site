@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="generel.css" />
+    <link rel="stylesheet" href="produktliste.css" />
+    <title>Produktliste</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="generel.css" />
-  <link rel="stylesheet" href="produktliste.css">
-  <title>Produktliste</title>
-</head>
-
-<body class="productlist">
-  <header>
-    <nav>
-      <ul>
-        <li><a href="produktliste.html?kat=Sofa">Sofaer</a></li>
-        <li><a href="produktliste.html?kat=Bord">Borde</a></li>
-        <a href="index.html"><img class="logo" src="logo.svg" alt="logo" /></a>
-        <li><a href="produktliste.html?kat=Stol">Lænestole</a></li>
-        <li><a href="produktliste.html?kat=Kommode">Kommoder</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="grid">
-    <h2>Sofa</h2>
-    <template id="smallProductTemplate">
-      <article class="smallProduct">
-        <a href="produkt.html"><img src="placeholder.jpeg" alt="" /></a>
-        <h3>En sofa</h3>
-        <p class="farve">blå</p>
-        <p class="price">En million</p>
-        <div class="tilbud gem">
-          <p>Ny pris <span>En halv million</span> DKK</p>
-          <p><span id="procent"></span></p>
-        </div>
-        <a href="produkt.html">
-          <p id="læsmere">
-            Læs mere
-          </p>
-        </a>
-      </article>
-    </template>
-    <!-- 
+  <body class="productlist">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="produktliste.html?kat=Sofa">Sofaer</a></li>
+          <li><a href="produktliste.html?kat=Bord">Borde</a></li>
+          <li>
+            <a class="logoLink" href="index.html"><img src="logo.svg" alt="logo" /></a>
+          </li>
+          <li><a href="produktliste.html?kat=Stol">Lænestole</a></li>
+          <li><a href="produktliste.html?kat=Kommode">Kommoder</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="grid">
+      <h2>Sofa</h2>
+      <template id="smallProductTemplate">
+        <article class="smallProduct">
+          <a href="produkt.html"><img class="forsideBilleder" src="placeholder.jpeg" alt="" /></a>
+          <h3>En sofa</h3>
+          <p class="farve">blå</p>
+          <p class="price">En million</p>
+          <div class="tilbud gem">
+            <p>Ny pris <span>En halv million</span> DKK</p>
+            <p><span id="procent"></span></p>
+          </div>
+          <a href="produkt.html">
+            <p id="læsmere">Læs mere</p>
+          </a>
+        </article>
+      </template>
+      <!-- 
       <article class="smallProduct">
         <img src="placeholder.jpeg" alt="" />
         <h3>En sofa</h3>
@@ -80,39 +79,38 @@
         </div>
         <a href="produkt.html">Læs mere</a>
       </article> -->
-  </main>
-  <footer>
-    <section>
-      <h3>Tilmeld dig vores nyhedsbrev</h3>
-      <form>
+    </main>
+    <footer>
+      <section>
+        <h3>Tilmeld dig vores nyhedsbrev</h3>
+        <form>
+          <ul>
+            <label for="full-name">Fulde navn</label>
+            <input id="full-name" name="fname" type="text" placeholder="Mathilde Krener" />
+          </ul>
+          <ul>
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="mathildekrener@gmail.com" />
+          </ul>
+          <button>Send ind</button>
+        </form>
+      </section>
+      <section>
+        <h3>Kontakt os</h3>
         <ul>
-          <label for="full-name">Fulde navn</label>
-          <input id="full-name" name="fname" type="text" placeholder="Mathilde Krener" />
+          <a href="#">Facebook</a>
         </ul>
         <ul>
-          <label for="email">E-mail</label>
-          <input id="email" name="email" type="email" placeholder="mathildekrener@gmail.com" />
+          <a href="#">Instagram</a>
         </ul>
-        <button>Send ind</button>
-      </form>
-    </section>
-    <section>
-      <h3>Kontakt os</h3>
-      <ul>
-        <a href="#">Facebook</a>
-      </ul>
-      <ul>
-        <a href="#">Instagram</a>
-      </ul>
-      <ul>
-        <a href="#">Mail</a>
-      </ul>
-      <ul>
-        <a href="#">Telefon</a>
-      </ul>
-    </section>
-  </footer>
-  <script src="produktliste.js"></script>
-</body>
-
+        <ul>
+          <a href="#">Mail</a>
+        </ul>
+        <ul>
+          <a href="#">Telefon</a>
+        </ul>
+      </section>
+    </footer>
+    <script src="produktliste.js"></script>
+  </body>
 </html>

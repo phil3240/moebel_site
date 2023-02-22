@@ -14,3 +14,7 @@
 a:hover {
   color: grey;
 }
+
+img:hover {
+  opacity: 80%;
+}
