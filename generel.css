@@ -34,8 +34,9 @@ nav a:hover {
   color: grey;
 }
 
-.logo {
-  width: 60%;
+.logoLink {
+  width: 100px;
+  display: inline-block;
 }
 
 h1 {

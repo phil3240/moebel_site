@@ -11,7 +11,7 @@ const options = {
 document.querySelector("h2").textContent = kat;
 
 async function getData() {
-  const response = await fetch("test.json");
+  const response = await fetch(url, options);
   const data = await response.json();
   data.forEach(showProduct);
   console.log(data);
