@@ -9,30 +9,45 @@
   </head>
   <body>
     <header>
-      <div><a href="index.html">LOGO</a></div>
-
-      <div>
-        <nav>
-          <ul>
-            <li><a href="produktliste.html">Sofaer</a></li>
-            <li><a href="produktliste.html">Sofaborde</a></li>
-            <li><a href="produktliste.html">Lamper</a></li>
-            <li><a href="produktliste.html">Lænestole</a></li>
-            <li><a href="produktliste.html">Kommoder</a></li>
-            <li><a href="produktliste.html">Tekstiler</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <ul>
+          <li><a href="produktliste.html?kat=Sofa">Sofaer</a></li>
+          <li><a href="produktliste.html?kat=Bord">Borde</a></li>
+          <li>
+            <a class="logoLink" href="index.html"><img src="logo.svg" alt="logo" /></a>
+          </li>
+          <li><a href="produktliste.html?kat=Stol">Lænestole</a></li>
+          <li><a href="produktliste.html?kat=Kommode">Kommoder</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <img src="webp/stol3.webp" alt="Annes stol" />
-      <section class="purchaseBox">
-        <div class="box">
-          <h3 class="produkt_navn">Annes stol</h3>
-          <p class="matriale">Annes stol | Grey</p>
-          <form>
-            <label
-              >antal produkter
+      <div class="grid_1-1">
+        <div>
+          <img class="produktFoto" src="webp/stol3.webp" alt="Annes stol" />
+        </div>
+        <div>
+          <h2 class="produkt_navn">Annes stol</h2>
+          <h3 class="madeOf">egetræ</h3>
+
+          <section class="info">
+            <dl>
+              <dt id="first">Produktnavn</dt>
+              <dd class="produkt_navn">Annes stol</dd>
+              <dt>Farve</dt>
+              <dd class="colour">Grey</dd>
+              <dt>Produktmål</dt>
+              <dd class="produkt_maal">15x12 cm</dd>
+              <dt>matriale</dt>
+              <dd class="matriale">træ</dd>
+              <dt>Pris</dt>
+              <dd class="price">1999 kr.</dd>
+            </dl>
+          </section>
+          <br />
+          <form class="info">
+            <label>
+              Antal produkter <br />
               <select name="antal">
                 <option>1</option>
                 <option>2</option>
@@ -40,26 +55,45 @@
                 <option>4</option>
               </select>
             </label>
-            <button>Add to basket</button>
+            <br />
+            <button>Tilføj til kurv</button>
           </form>
         </div>
-      </section>
-      <section class="info">
-        <h2>Produkt Information</h2>
-        <dl>
-          <dt>Produktnavn</dt>
-          <dd class="produkt_navn">Annes stol</dd>
-          <dt>Farve</dt>
-          <dd class="colour">Grey</dd>
-          <dt>Produktmål</dt>
-          <dd class="produkt_maal">15x12 cm</dd>
-          <dt>matriale</dt>
-          <dd class="matriale">træ</dd>
-        </dl>
-        <h1>Lænestole</h1>
-        <p>Annes stol</p>
-      </section>
+      </div>
+
+      <footer>
+        <section>
+          <h3>Tilmeld dig vores nyhedsbrev</h3>
+          <form>
+            <div class="form_felt">
+              <label for="full-name">Fulde navn</label>
+              <input id="full-name" name="fname" type="text" placeholder="Mathilde Krener" />
+            </div>
+            <div class="form_felt">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" placeholder="mathildekrener@gmail.com" />
+            </div>
+            <button>Send ind</button>
+          </form>
+        </section>
+        <section>
+          <h3>Kontakt os</h3>
+          <ul>
+            <a href="#">Facebook</a>
+          </ul>
+          <ul>
+            <a href="#">Instagram</a>
+          </ul>
+          <ul>
+            <a href="#">Mail</a>
+          </ul>
+          <ul>
+            <a href="#">Telefon</a>
+          </ul>
+        </section>
+      </footer>
     </main>
     <script src="produkt.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>

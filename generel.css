@@ -7,6 +7,7 @@
 html {
   scroll-behavior: smooth;
   background-color: #f0eee1;
+  font-family: "Oswald", sans-serif;
 }
 
 main {
@@ -76,10 +77,6 @@ footer h3 {
   gap: 2rem;
 }
 
-.productlist article.soldOut img {
-  opacity: 0.5;
-}
-
 .productlist main h2 {
   grid-column: 1/-1;
 }
@@ -129,6 +126,43 @@ footer {
   display: none;
 }
 
-html {
-  font-family: "Oswald", sans-serif;
+/* ------------Produkt------------ */
+@media (min-width: 700px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.info {
+  text-align: center;
+}
+
+dt {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.6rem;
+  background-color: #948d87;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 0px 6px 10px #00000086;
+}
+
+button:hover {
+  background-color: grey;
+}
+
+.madeOf {
+  text-align: center;
+  margin-top: 0.7rem;
+}
+
+#first {
+  margin-top: 3rem;
 }

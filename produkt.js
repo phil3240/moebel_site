@@ -19,9 +19,9 @@ function visProdukt(produkt) {
   document.querySelector(".produkt_navn").textContent = produkt.navn;
   document.querySelector(".colour").textContent = produkt.farve;
   document.querySelector(".produkt_maal").textContent = produkt.produktmaal;
-  //document.querySelector("#pris").textContent = produkt.price;
-  //document.querySelector("#type").textContent = produkt.articletype;
-  document.querySelector("img").src = `webp/${produkt.billede}`;
+  document.querySelector(".madeOf").textContent = produkt.materiale;
+  document.querySelector(".price").textContent = produkt.pris + ",-";
+  document.querySelector(".produktFoto").src = `webp/${produkt.billede}`;
 }
 
 hentData(produktURL);
