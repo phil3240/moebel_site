@@ -110,11 +110,6 @@ footer h3 {
   margin-bottom: 0.4rem;
 }
 
-.productlist article .discounted,
-.productlist article .price span {
-  display: none;
-}
-
 footer {
   display: flex;
   justify-content: space-around;
