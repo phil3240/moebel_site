@@ -6,8 +6,9 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #f0eee1;
+  background-color: #77726e;
   font-family: "Oswald", sans-serif;
+  color: #fff;
 }
 
 main {
@@ -32,7 +33,7 @@ nav ul {
 }
 
 nav a:hover {
-  color: grey;
+  color: black;
 }
 
 .logoLink {
@@ -50,7 +51,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 
 nav {
@@ -164,4 +165,9 @@ button:hover {
 
 #first {
   margin-top: 3rem;
+}
+
+.box {
+  background-color: #a09993;
+  margin-inline: 11rem;
 }
